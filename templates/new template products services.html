@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style-template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Products & Services Page Template</title>
+        <style>
+            .main-content-container{
+                display: grid;
+                gap: 10px;
+                grid-template-columns: 2fr 5fr;
+            }
+
+            .theme-image {
+                background-color: #ffcc99;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .content {
+                background-color: #ffcc99;
+            }
+
+            .sidebar {
+                background-color: #ffcc99;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="./images/logo.png" alt="New Treads Tire Co. Logo">
+                </div>
+                <div class="search-bar">
+                    <form class="searchbar" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="top-nav">
+                    <nav class="top-nav-bar">
+                        <ul class="top-nav-list">
+                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a class="active" href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact & Appointments</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="page-heading">
+                    <h1>Products/Services Page</h1>
+                </div>
+                <div class="main-content-container">
+                    <div class="theme-image">
+                        <p>theme image here</p>
+                    </div>
+                    <div class="sidebar">
+                        <p>search and filter area</p>
+                    </div>
+                    <div class="content">
+                        <p>main content area</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="bot-nav">
+                    <nav class="bot-nav-bar">
+                        <ul class="bot-nav-list">
+                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a class="active" href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact & Appointments</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="bot-info">
+                    <p>&copy; 2025, New Treads Tire Co.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

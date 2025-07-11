@@ -1,0 +1,98 @@
+body {
+    display: grid;
+    justify-content: center;
+    background-color: #ffffe6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    gap: 10px;
+    padding: 0;
+    max-width: 800px;
+}
+
+header {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 0;
+}
+
+.logo img {
+    outline: 2px solid #ff3300;
+}
+
+.search-bar {
+    align-self: end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffcc99;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    background-color: #ffcc99;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li a#current-page {
+    background-color: #002b80;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #66ccff;
+    margin: 0;
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+main.content-with-sidebar {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 5fr 2fr;
+}
+
+main.content-with-sidebar.reverse-columns {
+    grid-template-columns: 2fr 5fr;
+}
+
+.content-element {
+    background-color: #ffcc99;
+}
+
+.two-columns {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
