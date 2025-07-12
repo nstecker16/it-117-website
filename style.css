@@ -91,6 +91,45 @@ main.content-with-sidebar.reverse-columns {
     grid-column-end: 3;
 }
 
+#appointment-form {
+    width: 100%;
+    border: #002b80 2px solid;
+    padding: 10px;
+}
+
+#appointment-form fieldset {
+    border: #002b80 2px dotted;
+}
+
+#appointment-form input {
+    display: block;
+}
+
+#appointment-form input[type=date] {
+    display: inline-block;
+}
+
+#appointment-form input[type=time] {
+    display: inline-block;
+}
+
+#appointment-form input[type=checkbox] {
+    display: inline-block;
+}
+
+#appointment-form input[type=text] {
+    width: 100%;
+}
+
+#appointment-form textarea {
+    width: 100%;
+}
+
+#appointment-form label {
+    color: #002b80;
+    size: 16px;
+}
+
 footer {
     display: grid;
     grid-template-columns: auto;
