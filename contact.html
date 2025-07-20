@@ -13,7 +13,7 @@
                     <img src="./images/logo.png" alt="New Treads Tire Co. Logo">
                 </div>
                 <div class="search-bar">
-                    <form class="searchbar" action="action_page.php">
+                    <form class="searchbar" action="#">
                         <input type="text" placeholder="Search.." name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
@@ -38,7 +38,7 @@
                 <div class="content-element">
                     <h3>Schedule an Appointment:</h3>
                     <div class="container">
-                            <form id="appointment-form" action="#">
+                            <form id="appointment-form" onsubmit="return validateForm()" action="#">
                                 <fieldset>
                                     <legend>Personal Info:</legend>
                                     <label for="fname">First Name</label>
@@ -46,6 +46,12 @@
 
                                     <label for="lname">Last Name</label>
                                     <input type="text" id="lname" name="lastname" placeholder="Last Name...">
+
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email" placeholder="example@website.com">
+
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" id="phone" name="phone" placeholder="9999999999">
                                 </fieldset>
                                 <br>
                                 <fieldset>
@@ -120,5 +126,40 @@
                 </div>
             </footer>
         </div>
+        <script>
+            function validateForm() {
+                console.log("validateForm ran");
+
+                let form = document.getElementById("appointment-form");
+                let firstname = form["firstname"].value;
+                let lastname = form["lastname"].value;
+                let email = form["email"].value;
+                let address = form["appointmentaddress"].value;
+                let date = form["appointmentdate"].value;
+                let time = form["appointmenttime"].value;
+                let service = form["service-type"].value;
+                let phone = form["phone"].value;
+                let otherdetails = form["other-details"].value;
+
+                if (firstname == "" || lastname == "" || email == "" || address == "" || date == "" || time == "" || service == "" || phone == "") {
+                    alert("Required Field");
+                    return false;
+                }
+
+                let emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+                if (!emailPattern.test(email)) {
+                    alert("Invalid email address");
+                    return false;
+                }
+
+                let phonePattern = /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/im;
+                if (!phonePattern.test(phone)) {
+                    alert("Invalid phone number");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
     </body>
 </html>
