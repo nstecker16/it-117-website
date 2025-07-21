@@ -91,10 +91,12 @@ main.content-with-sidebar.reverse-columns {
     grid-column-end: 3;
 }
 
+/* Unit 7 - changing appointment-form style to have a margin so that it presents better within other page elements*/
 #appointment-form {
     width: 750px;
     border: #002b80 2px solid;
     padding: 10px;
+    margin: 10px;
 }
 
 #appointment-form fieldset {
@@ -128,6 +130,30 @@ main.content-with-sidebar.reverse-columns {
 #appointment-form label {
     color: #002b80;
     size: 16px;
+}
+
+/* Unit 7 - creating a class to add a red asterisk after all form labels indicated as required */
+.required-field-label::after {
+  content: " *";
+  color: red;
+}
+
+/* Unit 7 - adding a new class to style all input submit buttons on my site to be more accessible for users*/
+.submit-button {
+    background-color: #ff3300;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    display: inline-block;
+}
+
+.submit-button:hover {
+    background-color: #66ccff;
 }
 
 footer {

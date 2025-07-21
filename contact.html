@@ -41,33 +41,33 @@
                             <form id="appointment-form" onsubmit="return validateForm()" action="#">
                                 <fieldset>
                                     <legend>Personal Info:</legend>
-                                    <label for="fname">First Name</label>
+                                    <label for="fname" class="required-field-label">First Name</label>
                                     <input type="text" id="fname" name="firstname" placeholder="First Name...">
 
-                                    <label for="lname">Last Name</label>
+                                    <label for="lname" class="required-field-label">Last Name</label>
                                     <input type="text" id="lname" name="lastname" placeholder="Last Name...">
 
-                                    <label for="email">Email</label>
+                                    <label for="email" class="required-field-label">Email</label>
                                     <input type="text" id="email" name="email" placeholder="example@website.com">
 
-                                    <label for="phone">Phone Number</label>
+                                    <label for="phone" class="required-field-label">Phone Number</label>
                                     <input type="text" id="phone" name="phone" placeholder="9999999999">
                                 </fieldset>
                                 <br>
                                 <fieldset>
                                     <legend>Appointment Details:</legend>
-                                    <label for="address">Appointment Address</label>
+                                    <label for="address" class="required-field-label">Appointment Address</label>
                                     <input type="text" id="address" name="appointmentaddress" placeholder="Appointment Address...">
                                     <br>
-                                    <label for="date">Select a Date:</label>
+                                    <label for="date" class="required-field-label">Select a Date:</label>
                                     <input type="date" id="appointmentdate" name="appointmentdate">
-                                    <label for="time">Select a Time:</label>
+                                    <label for="time" class="required-field-label">Select a Time:</label>
                                     <input type="time" id="appointmenttime" name="appointmenttime">
                                 </fieldset>
                                 <br>
                                 <fieldset>
                                     <legend>Service Details:</legend>
-                                    <label for="service-type">Select a Service:</label>
+                                    <label for="service-type" class="required-field-label">Select a Service:</label>
                                     <select name="service-type" id="service-type">
                                         <option value="placeholder">Select...</option>
                                         <option value="tire">Tire Only</option>
@@ -79,9 +79,10 @@
                                     <br>
                                     <label for="other-details">Anything else we should know?</label>
                                     <br>
-                                    <textarea name="other-details" id="other-details" rows="5" cols="50">If necessary, please tell us any other information that will help us understand the specific nature of your appointment request.</textarea>
+                                    <textarea name="other-details" id="other-details" rows="5" cols="50" placeholder="If necessary, please tell us any other information that will help us understand the specific nature of your appointment request."></textarea>
                                 </fieldset>
-                                <input type="submit" value="Submit">
+                                <p>Red asterisk indicates required field</p>
+                                <input type="submit" value="Submit" class="submit-button">
                             </form>
                 </div>
             </main>
