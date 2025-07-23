@@ -3,20 +3,16 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Contact & Appointments</title>
     </head>
     <body>
         <div class="container">
             <header>
                 <div class="logo">
-                    <img src="./images/logo.png" alt="New Treads Tire Co. Logo">
+                    <a href="index.html"><img src="./images/logo.png" alt="New Treads Tire Co. flaming tire logo"></a>
                 </div>
-                <div class="search-bar">
-                    <form class="searchbar" action="#">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                <div id="appointment-button" class="content-element">
+                    <a href="contact.html#appointment-form">Click HERE to schedule an appointment!</a>
                 </div>
                 <nav class="two-columns">
                     <ul>
@@ -31,13 +27,23 @@
             </header>
             <main>
                 <div class="content-element">
-                    <h3>Contact Info</h3>
-                    <p>Lorem ipsum dolor sit amet, eam at sonet vocent. Noster scripta consequuntur sed ea, quo in paulo placerat conclusionemque, ad unum tollit sit. Dicta persius labitur est ne, eros iracundia mel an. Vim erant tamquam facilis at.</p>
-                    <p>Ne vim justo fabellas qualisque. Eos verterem indoctum ad. Mea scripta explicari ei. Mei ne aliquip oportere, stet albucius eu mel. Luptatum recusabo mediocritatem te eum, eu nec paulo fuisset. Vim ex porro vivendo civibus. Nec ei minim habemus reprimique.</p>
+                    <h2>Contact Info</h2>
+                    <h3>Store Location:</h3>
+                    <p>1234 Rolling Drive</p>
+                    <p>Tire City, NT 12345</p>
+                    <h3>Phone:</h3>
+                    <p>(512) 555-TREAD (8732)</p>
+                    <h3>Email:</h3>
+                    <p>support@newtreadstireco.com</p>
+                    <p>appointments@newtreadstireco.com</p>
+                    <h3>Follow Us:</h3>
+                    <p>Instagram: @newtreadstireco</p>
+                    <p>Facebook: facebook.com/newtreadstireco</p>
+                    <p>X (Twitter): @NewTreadsTC</p>
                 </div>
                 <div class="content-element">
-                    <h3>Schedule an Appointment:</h3>
-                    <div class="container">
+                    <h2>Schedule an Appointment:</h2>
+                    <div>
                             <form id="appointment-form" onsubmit="return validateForm()" action="#">
                                 <fieldset>
                                     <legend>Personal Info:</legend>
@@ -86,10 +92,12 @@
                             </form>
                 </div>
             </main>
-            <img src="./images/contact theme image.jpg" width="800" height="200" alt="Delivery Vans">
             <footer>
                 <div>
-                    <nav class="two-columns">
+                    <img class="theme-image" src="./images/contact theme image.jpg" alt="New Treads Tire Co. fleet of delivery vans">
+                </div>
+                <div>
+                    <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="services.html">Services</a></li>
@@ -98,32 +106,32 @@
                             <li><a href="#" id="current-page">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="content-element">
-                        <h3>Store Hours</h3>
-                        <table>
-                            <tr>
-                                <th>Day</th>
-                                <th>Open</th>
-                                <th>Close</th>
-                            </tr>
-                            <tr>
-                                <td>Weekdays</td>
-                                <td>8 am</td>
-                                <td>6 pm</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday</td>
-                                <td>10 am</td>
-                                <td>4 pm</td>
-                            </tr>
-                            <tr>
-                                <td>Sunday</td>
-                                <td>12 pm</td>
-                                <td>4 pm</td>
-                            </tr>
-                        </table>
-                        <p class="content-element">&copy; 2025, New Treads Tire Co.</p>
-                    </div>
+                </div>
+                <div class="content-element">
+                    <h2>Store Hours</h2>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Open</th>
+                            <th>Close</th>
+                        </tr>
+                        <tr>
+                            <td>Weekdays</td>
+                            <td>8 am</td>
+                            <td>6 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10 am</td>
+                            <td>4 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>12 pm</td>
+                            <td>4 pm</td>
+                        </tr>
+                    </table>
+                    <p class="content-element">&copy; 2025, New Treads Tire Co.</p>
                 </div>
             </footer>
         </div>

@@ -3,20 +3,16 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Services</title>
     </head>
     <body>
         <div class="container">
             <header>
                 <div class="logo">
-                    <img src="./images/logo.png" alt="New Treads Tire Co. Logo">
+                    <a href="index.html"><img src="./images/logo.png" alt="New Treads Tire Co. flaming tire logo"></a>
                 </div>
-                <div class="search-bar">
-                    <form class="searchbar" action="#">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                <div id="appointment-button" class="content-element">
+                    <a href="contact.html#appointment-form">Click HERE to schedule an appointment!</a>
                 </div>
                 <nav class="two-columns">
                     <ul>
@@ -28,22 +24,96 @@
                     </ul>
                 </nav>
                 <h1>Services</h1>
+                <div class="two-columns">
+                    <img class="theme-image" src="./images/service theme image.jpg" alt="A member of our service team inspecting a tire">
+                </div>
             </header>
-            <img src="./images/service theme image.jpg" width="800" height="200" alt="Man inspecting tire">
             <main class="content-with-sidebar reverse-columns">
                 <div class="content-element">
-                    <h3>Search & Filter</h3>
-                    <p>Lorem ipsum dolor sit amet, eam at sonet vocent. Noster scripta consequuntur sed ea, quo in paulo placerat conclusionemque, ad unum tollit sit. Dicta persius labitur est ne, eros iracundia mel an. Vim erant tamquam facilis at.</p>
+                    <div id="services-search-filter">
+                        <h2>Search & Filter</h2>
+                        <div class="search-filter">
+                            <input type="text" id="services-search" placeholder="Search Services...">
+                            <div class="filter">
+                                <h3>Filter by Category</h3>
+                                <ul>
+                                    <li><label><input type="checkbox" class="filter-category" value="tire">Tires</label></li>
+                                    <li><label><input type="checkbox" class="filter-category" value="oil">Oil</label></li>
+                                    <li><label><input type="checkbox" class="filter-category" value="diagnosis">Diagnosis</label></li>
+                                </ul>
+                                <h3>Filter by Price</h3>
+                                <ul>
+                                    <li><label><input type="checkbox" class="filter-category" value="0-49.99">$0 - $49.99</label></li>
+                                    <li><label><input type="checkbox" class="filter-category" value="50-99.99">$50 - $99.99</label></li>
+                                    <li><label><input type="checkbox" class="filter-category" value="100-up">$100+</label></li>
+                                </ul>
+                                <h3>Filter by Time</h3>
+                                <ul>
+                                    <li><label><input type="checkbox" class="filter-category" value="0-30">30 minutes or less</label></li>
+                                    <li><label><input type="checkbox" class="filter-category" value="30-60">30 minutes to an hour</label></li>
+                                    <li><label><input type="checkbox" class="filter-category" value="60-up">One hour or more</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="content-element">
-                    <h3>Results</h3>
-                    <p>Lorem ipsum dolor sit amet, eam at sonet vocent. Noster scripta consequuntur sed ea, quo in paulo placerat conclusionemque, ad unum tollit sit. Dicta persius labitur est ne, eros iracundia mel an. Vim erant tamquam facilis at.</p>
-                    <p>Ne vim justo fabellas qualisque. Eos verterem indoctum ad. Mea scripta explicari ei. Mei ne aliquip oportere, stet albucius eu mel. Luptatum recusabo mediocritatem te eum, eu nec paulo fuisset. Vim ex porro vivendo civibus. Nec ei minim habemus reprimique.</p>
+                    <h2>Results</h2>
+                    <div id="services-grid">
+                        <div class="services-card">
+                            <h3>Flat-Tire Repair</h3>
+                            <ul>
+                                <li>Category: Tires</li>
+                                <li>$60</li>
+                                <li>Under 30 Minutes</li>
+                            </ul>
+                        </div>
+                        <div class="services-card">
+                            <h3>Tire Rotation</h3>
+                            <ul>
+                                <li>Category: Tires</li>
+                                <li>$20</li>
+                                <li>Under 30 Minutes</li>
+                            </ul>
+                        </div>
+                        <div class="services-card">
+                            <h3>Oil Change</h3>
+                            <ul>
+                                <li>Category: Oil</li>
+                                <li>$80</li>
+                                <li>30 minutes to an hour</li>
+                            </ul>
+                        </div>
+                        <div class="services-card">
+                            <h3>Oil Top-Up</h3>
+                            <ul>
+                                <li>Category: Oil</li>
+                                <li>$10</li>
+                                <li>Under 30 Minutes</li>
+                            </ul>
+                        </div>
+                        <div class="services-card">
+                            <h3>Check Engine Light Diagnosis</h3>
+                            <ul>
+                                <li>Category: Diagnosis</li>
+                                <li>$50</li>
+                                <li>Under 30 Minutes</li>
+                            </ul>
+                        </div>
+                        <div class="services-card">
+                            <h3>Steering Diagnosis</h3>
+                            <ul>
+                                <li>Category: Diagnosis</li>
+                                <li>$120</li>
+                                <li>One hour or more</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer>
                 <div>
-                    <nav class="two-columns">
+                    <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#" id="current-page">Services</a></li>
@@ -52,32 +122,32 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="content-element">
-                        <h3>Store Hours</h3>
-                        <table>
-                            <tr>
-                                <th>Day</th>
-                                <th>Open</th>
-                                <th>Close</th>
-                            </tr>
-                            <tr>
-                                <td>Weekdays</td>
-                                <td>8 am</td>
-                                <td>6 pm</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday</td>
-                                <td>10 am</td>
-                                <td>4 pm</td>
-                            </tr>
-                            <tr>
-                                <td>Sunday</td>
-                                <td>12 pm</td>
-                                <td>4 pm</td>
-                            </tr>
-                        </table>
-                        <p class="content-element">&copy; 2025, New Treads Tire Co.</p>
-                    </div>
+                </div>
+                <div class="content-element">
+                    <h2>Store Hours</h2>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Open</th>
+                            <th>Close</th>
+                        </tr>
+                        <tr>
+                            <td>Weekdays</td>
+                            <td>8 am</td>
+                            <td>6 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10 am</td>
+                            <td>4 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>12 pm</td>
+                            <td>4 pm</td>
+                        </tr>
+                    </table>
+                    <p class="content-element">&copy; 2025, New Treads Tire Co.</p>
                 </div>
             </footer>
         </div>

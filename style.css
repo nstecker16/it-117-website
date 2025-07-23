@@ -7,11 +7,12 @@ body {
 
 .container {
     display: grid;
-    justify-content: center;
     grid-template-columns: auto;
     gap: 10px;
     padding: 0;
-    max-width: 800px;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1000px;
 }
 
 header {
@@ -21,12 +22,20 @@ header {
     padding: 0;
 }
 
-.logo img {
-    outline: 2px solid #ff3300;
+#appointment-button {
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ff3300;
 }
 
-.search-bar {
-    align-self: end;
+#appointment-button a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 nav ul {
@@ -42,11 +51,11 @@ nav ul li {
     background-color: #ffcc99;
     margin: 0;
     padding: 0;
+    width: 20%;
 }
 
 nav ul li a {
     display: block;
-    width: 140px;
     text-align: center;
     text-decoration: none;
     margin: 0;
@@ -84,6 +93,8 @@ main.content-with-sidebar.reverse-columns {
 
 .content-element {
     background-color: #ffcc99;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .two-columns {
@@ -91,16 +102,59 @@ main.content-with-sidebar.reverse-columns {
     grid-column-end: 3;
 }
 
+.theme-image {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.filter ul li {
+    list-style: none;
+}
+
+#services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.services-card {
+    background-color: #66ccff;
+    border-radius: 10 px;
+    padding: 5 px;
+}
+
+.services-card ul li {
+    list-style: none;
+}
+
+#products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.products-card {
+    background-color: #66ccff;
+    border-radius: 10 px;
+    padding: 5 px;
+}
+
+.products-card ul li {
+    list-style: none;
+}
+
 /* Unit 7 - changing appointment-form style to have a margin so that it presents better within other page elements*/
 #appointment-form {
-    width: 750px;
     border: #002b80 2px solid;
     padding: 10px;
-    margin: 10px;
+    border-radius: 10px;
+    max-width: 100%;
 }
 
 #appointment-form fieldset {
     border: #002b80 2px dotted;
+    border-radius: 10px;
 }
 
 #appointment-form input {
@@ -150,6 +204,7 @@ main.content-with-sidebar.reverse-columns {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
     display: inline-block;
+    border-radius: 10px;
 }
 
 .submit-button:hover {
