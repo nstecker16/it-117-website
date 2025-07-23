@@ -78,7 +78,7 @@ nav ul li a {
     padding: 10px;
 }
 
-nav ul li a#current-page {
+.current-page {
     background-color: #002b80;
     color: white;
     margin: 0;
