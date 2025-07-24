@@ -41,19 +41,22 @@ header {
 }
 
 #skip-main-content {
-    align-self: center;
-    padding: 10px;
-    margin: 10px;
-    background-color: #66ccff;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: 1000;
 }
 
 #skip-main-content a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    display: block;
-    font-weight: bolder;
-    font-size: larger;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#skip-main-content a:focus {
+  top: 0;
 }
 
 nav ul {
