@@ -40,7 +40,7 @@ header {
     font-size: larger;
 }
 
-#skip-main-content a {
+.skip-link {
   position: absolute;
   top: -40px;
   left: 0;
@@ -51,7 +51,7 @@ header {
   z-index: 1000;
 }
 
-#skip-main-content a:focus {
+.skip-link:focus {
   top: 0;
 }
 
