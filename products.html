@@ -6,24 +6,20 @@
         <title>Products</title>
     </head>
     <body>
+        <a class="skip-link" href="#main-content" aria-label="Skip to main content button">Skip to main content</a>
         <div class="container">
             <header>
                 <div class="logo" role="button">
-                    <a href="index.html"><img src="./images/logo.png" alt="New Treads Tire Co. flaming tire logo"></a>
+                    <a href="#"><img src="./images/logo.png" alt="New Treads Tire Co. flaming tire logo"></a>
                 </div>
-                <div>
-                    <div id="appointment-button" class="content-element">
-                        <a href="contact.html#appointment-form">Click HERE to schedule an appointment!</a>
-                    </div>
-                    <div id="skip-main-content" class="content-element">
-                        <a href="#main-content">Skip to main content</a>
-                    </div>
+                <div id="appointment-button" class="content-element">
+                    <a href="contact.html#appointment-form">Click HERE to schedule an appointment!</a>
                 </div>
                 <nav class="two-columns" aria-label="Main navigation">
                     <ul>
-                        <li><a href="#" class="current-page" role="button">Home</a></li>
+                        <li><a href="index.html" role="button">Home</a></li>
                         <li><a href="services.html" role="button">Services</a></li>
-                        <li><a href="products.html" role="button">Products</a></li>
+                        <li><a href="#" class="current-page" role="button">Products</a></li>
                         <li><a href="about.html" role="button">About</a></li>
                         <li><a href="contact.html" role="button">Contact</a></li>
                     </ul>
@@ -120,8 +116,8 @@
                 <div>
                     <nav aria-label="Footer navigation">
                         <ul>
-                            <li><a href="#" class="current-page" role="button">Home</a></li>
-                            <li><a href="services.html" role="button">Services</a></li>
+                            <li><a href="index.html" role="button">Home</a></li>
+                            <li><a href="#" class="current-page" role="button">Services</a></li>
                             <li><a href="products.html" role="button">Products</a></li>
                             <li><a href="about.html" role="button">About</a></li>
                             <li><a href="contact.html" role="button">Contact</a></li>
@@ -130,7 +126,7 @@
                 </div>
                 <div class="content-element">
                     <h2>Store Hours</h2>
-                    <table role="presentation">
+                    <table role="presentation" aria-label="Store hours">
                         <tr>
                             <th scope="col">Day</th>
                             <th scope="col">Open</th>
