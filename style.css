@@ -137,8 +137,8 @@ main.content-with-sidebar.reverse-columns {
 
 .services-card {
     background-color: #66ccff;
-    border-radius: 10 px;
-    padding: 5 px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .services-card ul li {
@@ -153,8 +153,8 @@ main.content-with-sidebar.reverse-columns {
 
 .products-card {
     background-color: #66ccff;
-    border-radius: 10 px;
-    padding: 5 px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .products-card ul li {
@@ -200,7 +200,6 @@ main.content-with-sidebar.reverse-columns {
 
 #appointment-form label {
     color: #002b80;
-    size: 16px;
 }
 
 /* Unit 7 - creating a class to add a red asterisk after all form labels indicated as required */
