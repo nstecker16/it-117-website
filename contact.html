@@ -26,13 +26,13 @@
                 </nav>
                 <h1 class="two-columns">Contact our store or schedule a mobile tire appointment!</h1>
             </header>
-            <main id="main-content">
-                <div class="content-element" aria-label="page description">
+            <section class="content-element" aria-label="page description" id="main-content">
                     <h2>Tire repair scheduling made easy</h2>
                     <p>Need help now? We make it easy to schedule tire repair service right from your phone or computer. Whether you're at home, work, or on the roadside, our mobile team is ready to assist. Simply fill out our quick form or give us a call to speak with a tire repair expert today.</p>
                     <p>Our scheduling process is simple, fast, and designed around your needs. From flat tire emergencies to routine replacements, we'll work with you to book a mobile tire appointment at a time and place that fits your day.</p>
                     <p>We believe communication is key, so we'll confirm your appointment and update you every step of the way. Don't wait—reach out now and let us get you rolling again.</p>
-                </div>
+            </section>
+            <main>
                 <div class="content-element">
                     <h2>Contact Info</h2>
                     <h3>Store Location:</h3>
@@ -51,57 +51,58 @@
                 <div class="content-element">
                     <h2>Schedule an Appointment:</h2>
                     <div>
-                            <form id="appointment-form" onsubmit="return validateForm()" action="#">
-                                <fieldset>
-                                    <legend>Personal Info:</legend>
-                                    <label for="fname" class="required-field-label">First Name</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="First Name...">
+                        <form id="appointment-form" onsubmit="return validateForm()" action="#">
+                            <fieldset>
+                                <legend>Personal Info:</legend>
+                                <label for="fname" class="required-field-label">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="First Name...">
 
-                                    <label for="lname" class="required-field-label">Last Name</label>
-                                    <input type="text" id="lname" name="lastname" placeholder="Last Name...">
+                                <label for="lname" class="required-field-label">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Last Name...">
 
-                                    <label for="email" class="required-field-label">Email</label>
-                                    <input type="text" id="email" name="email" placeholder="example@website.com">
+                                <label for="email" class="required-field-label">Email</label>
+                                <input type="text" id="email" name="email" placeholder="example@website.com">
 
-                                    <label for="phone" class="required-field-label">Phone Number</label>
-                                    <input type="text" id="phone" name="phone" placeholder="9999999999">
-                                </fieldset>
+                                <label for="phone" class="required-field-label">Phone Number</label>
+                                <input type="text" id="phone" name="phone" placeholder="9999999999">
+                            </fieldset>
+                            <br>
+                            <fieldset>
+                                <legend>Appointment Details:</legend>
+                                <label for="address" class="required-field-label">Appointment Address</label>
+                                <input type="text" id="address" name="appointmentaddress" placeholder="Appointment Address...">
                                 <br>
-                                <fieldset>
-                                    <legend>Appointment Details:</legend>
-                                    <label for="address" class="required-field-label">Appointment Address</label>
-                                    <input type="text" id="address" name="appointmentaddress" placeholder="Appointment Address...">
-                                    <br>
-                                    <label for="date" class="required-field-label">Select a Date:</label>
-                                    <input type="date" id="appointmentdate" name="appointmentdate">
-                                    <label for="time" class="required-field-label">Select a Time:</label>
-                                    <input type="time" id="appointmenttime" name="appointmenttime">
-                                </fieldset>
+                                <label for="appointmentdate" class="required-field-label">Select a Date:</label>
+                                <input type="date" id="appointmentdate" name="appointmentdate">
+                                <label for="appointmenttime" class="required-field-label">Select a Time:</label>
+                                <input type="time" id="appointmenttime" name="appointmenttime">
+                            </fieldset>
+                            <br>
+                            <fieldset>
+                                <legend>Service Details:</legend>
+                                <label for="service-type" class="required-field-label">Select a Service:</label>
+                                <select name="service-type" id="service-type">
+                                    <option value="placeholder">Select...</option>
+                                    <option value="tire">Tire Only</option>
+                                    <option value="diagnosis">Tire & Diagnosis</option>
+                                    <option value="oil">Tire & Oil</option>
+                                </select>
+                                <input type="checkbox" id="need-ride" name="need-ride" value="yes">
+                                <label for="need-ride">I need a ride</label>
                                 <br>
-                                <fieldset>
-                                    <legend>Service Details:</legend>
-                                    <label for="service-type" class="required-field-label">Select a Service:</label>
-                                    <select name="service-type" id="service-type">
-                                        <option value="placeholder">Select...</option>
-                                        <option value="tire">Tire Only</option>
-                                        <option value="diagnosis">Tire & Diagnosis</option>
-                                        <option value="oil">Tire & Oil</option>
-                                    </select>
-                                    <input type="checkbox" id="need-ride" name="need-ride" value="yes">
-                                    <label for="need-ride">I need a ride</label>
-                                    <br>
-                                    <label for="other-details">Anything else we should know?</label>
-                                    <br>
-                                    <textarea name="other-details" id="other-details" rows="5" cols="50" placeholder="If necessary, please tell us any other information that will help us understand the specific nature of your appointment request."></textarea>
-                                </fieldset>
-                                <p>Red asterisk indicates required field</p>
-                                <input type="submit" value="Submit" class="submit-button">
-                            </form>
+                                <label for="other-details">Anything else we should know?</label>
+                                <br>
+                                <textarea name="other-details" id="other-details" rows="5" cols="50" placeholder="If necessary, please tell us any other information that will help us understand the specific nature of your appointment request."></textarea>
+                            </fieldset>
+                            <p>Red asterisk indicates required field</p>
+                            <input type="submit" value="Submit" class="submit-button">
+                        </form>
+                    </div>
                 </div>
             </main>
             <footer>
                 <div>
-                    <img class="theme-image" src="./images/contact theme image.jpg" alt="New Treads Tire Co. fleet of delivery vans">
+                    <img class="theme-image" src="./images/contact-theme-image.jpg" alt="New Treads Tire Co. fleet of delivery vans">
                 </div>
                 <div>
                     <div>
